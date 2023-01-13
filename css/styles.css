@@ -1,0 +1,242 @@
+@import url('http://fonts.cdnfonts.com/css/tonight-friend'); /* Tonight Friend: 400 */
+@import url('http://fonts.cdnfonts.com/css/halfmoon'); /* Halfmoon: 400 o 700 */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400&display=swap'); /* Urbanist: 100 o 400 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    background-color:#f2f2f2;
+    scroll-behavior: smooth;
+}
+
+/* HEADER Y NAV ###########################################*/
+header{
+    height: 96px;
+    background-color:#891e18;
+    width: 100%;  
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px;     
+}
+
+    header a img{
+        text-decoration: none;   
+        padding: 8px;
+    }
+
+    header a img{
+        width: 100px;
+        margin: 16px 0 0 100px;
+    }
+
+    header nav a{
+        font-family: 'Halfmoon', sans-serif;
+        font-size: 24px;
+        color: #f2f2f2; 
+        text-decoration: none;
+        padding: 16px;
+        font-weight: 700;
+    }
+
+    header nav a:hover{
+        color: #b4b6d9;
+    }
+
+/* MAIN ############################ */
+
+
+/* NOSOTRAS ############################### */
+/* h1{
+    font-family: 'Halfmoon', serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 40px 40px 0 40px;
+} */
+
+#nosotras{
+    display: flex ;
+    justify-content: space-around;
+    height: 496px;
+    align-items: center;
+    text-align: center;
+    margin-top: -24px;
+    margin: -24px 0 -400px 0; /* -464px es para que haya una distancia estética entre nosotras y el footer */
+} 
+
+   #nosotras div img{
+        width: 288px
+    }
+
+    #nosotras div h2{
+        font-family: 'Halfmoon', serif;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 16px;
+    } 
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 288px;
+    height: 288px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, #flip-card-back-belen, #flip-card-back-karina, #flip-card-back-bianca, #flip-card-back-florencia {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  /* .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+   */
+  /* Style the back side */
+  #flip-card-back-belen {
+    background-image: url(/css/imgs/karifondo.png); 
+    background-size: cover;
+    color: #f2f2f2;
+    transform: rotateY(180deg);
+  }
+
+  #flip-card-back-karina {
+    background-image: url(/css/imgs/karifondo.png); 
+    background-size: cover;
+    color: #f2f2f2;
+    transform: rotateY(180deg);
+  }
+
+  #flip-card-back-bianca {
+    background-image: url(/css/imgs/biancafondo.png); 
+    background-size: cover;
+    color: #f2f2f2;
+    transform: rotateY(180deg);
+  }
+
+  #flip-card-back-florencia {
+    background-image: url(/css/imgs/florfondo.png); 
+    background-size: cover;
+    color: #f2f2f2;
+    transform: rotateY(180deg);
+  }
+
+  /* MOVER LAS IMAGENES, AGREGAR LOS LINKS, CAPAZ PONER NUESTRO NOMBRE DE NUEVO*/
+  #nosotras .flip-card #flip-card-back-belen a img, #flip-card-back-karina a img, #flip-card-back-bianca a img, #flip-card-back-florencia a img{
+    width: 32px;
+    background-color: red;
+    display: block;
+    justify-content: center;
+  }
+
+/* FOOTER ############################*/
+
+    /* OLAS ##################### */
+      .container {
+        position: relative;
+        height: 100vh;
+        position: relative;
+        z-index: -1; /* para que el contenedor no quede por delante de otras cosas y las tape (por ej: si queda arriba de un link, no se pude clickar ese link */
+        /* background-color: #fff; para ver el contenedor */
+        }
+      
+      .wave {
+        position: absolute;
+        bottom: 0;
+        /* height: 120px; altura original */
+        height: 200px;
+        width: 100%;
+        background: url('/css/imgs/pinkwave.png') repeat-x;
+        background-size: 250rem 30rem;
+        animation: animate 15s linear infinite;
+      }
+      
+      @keyframes  animate {
+        0% {
+          background-position-x: 0;
+          background-position-x: -250rem;
+        }
+      }
+      
+      .wave:nth-child(1) {
+        opacity: 0.9;
+      }
+      
+      .wave:nth-child(2) {
+        opacity: 0.5;
+        animation-delay: 0.2s;
+        animation-direction: reverse;
+      }
+      
+      .wave:nth-child(3) {
+        opacity: 0.7;
+        animation-delay: 5s;
+      }   
+
+    /* RESTO DEL FOOTER ########################## */
+footer{
+    height: 360px;
+    background-color:rgb(180, 93, 93, 0.97); /* un poco de transparencia para que se junte mejor con las olas */
+    font-family: 'Urbanist', serif;
+    color: #f2f2f2;
+}
+
+    #contenidofooter{
+        height: 288px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    #redes a img{
+        width: 64px;
+    }
+
+    #historia h2{
+        font-weight: 400;
+    }
+
+    #historia p{
+        text-align: justify;
+        width: 560px;
+        padding-top: 8px;
+    }
+
+    #nosotrasfooter div{
+        text-align: end;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    #nosotrasfooter div a img{
+        width: 32px;
+        vertical-align: middle;
+    } 
