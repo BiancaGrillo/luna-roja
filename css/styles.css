@@ -156,17 +156,11 @@ header{
     display: grid;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
   }
-
-  /* #nosotras .flip-card #flip-card-back-belen a, #flip-card-back-karina a, #flip-card-back-bianca a, #flip-card-back-florencia a{   
-    background-color: orange; 
-  } */
 
   #nosotras .flip-card #flip-card-back-belen a img, #flip-card-back-karina a img, #flip-card-back-bianca a img, #flip-card-back-florencia a img{
     width: 72px;
     transition: 0.3s;
-    /* background-color: red; */
   }
 
   #nosotras .flip-card #flip-card-back-belen a img:hover, #flip-card-back-karina a img:hover, #flip-card-back-bianca a img:hover, #flip-card-back-florencia a img:hover{
