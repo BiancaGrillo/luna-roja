@@ -22,7 +22,8 @@ header{
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 40px;     
+    padding: 40px;  
+    /* position: fixed;    */
 }
 
     header a img{
@@ -151,18 +152,26 @@ header{
   .redescartas{
     width: 288px;
     height: 196px;
-    margin-top: 38px;
+    margin-top: 46px;
     display: grid;
     justify-content: center;
     align-items: center;
+    /* background-color: blue; */
   }
 
-  #nosotras .flip-card #flip-card-back-belen a, #flip-card-back-karina a, #flip-card-back-bianca a, #flip-card-back-florencia a{
-    padding: 16px;
-  }
+  /* #nosotras .flip-card #flip-card-back-belen a, #flip-card-back-karina a, #flip-card-back-bianca a, #flip-card-back-florencia a{   
+    background-color: orange; 
+  } */
 
   #nosotras .flip-card #flip-card-back-belen a img, #flip-card-back-karina a img, #flip-card-back-bianca a img, #flip-card-back-florencia a img{
-    width: 64px;
+    width: 72px;
+    transition: 0.3s;
+    /* background-color: red; */
+  }
+
+  #nosotras .flip-card #flip-card-back-belen a img:hover, #flip-card-back-karina a img:hover, #flip-card-back-bianca a img:hover, #flip-card-back-florencia a img:hover{
+    width: 88px;
+    transition: 0.3s;
   }
 
 /* FOOTER ############################*/
@@ -253,3 +262,4 @@ footer{
         width: 32px;
         vertical-align: middle;
     } 
+
