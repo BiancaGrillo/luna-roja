@@ -14,34 +14,36 @@ html{
     scroll-behavior: smooth;
 }
 
+/* 1em = 16px. Para hacer la conversión seleccionar y Alt + Z */
+
 /* HEADER Y NAV ###########################################*/
 header{
-    height: 96px;
+    height: 6em;
     background-color:#891e18;
     width: 100%;  
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 40px;  
+    padding: 2.5em;  
     /* position: fixed;    */
 }
 
     header a img{
         text-decoration: none;   
-        padding: 8px;
+        padding: 0.5em;
     }
 
     header a img{
-        width: 100px;
-        margin: 16px 0 0 100px;
+        width: 6.25em;
+        margin: 1em 0 0 6.25em;
     }
 
     header nav a{
         font-family: 'Halfmoon', sans-serif;
-        font-size: 24px;
+        font-size: 1.5em;
         color: #f2f2f2; 
         text-decoration: none;
-        padding: 16px;
+        padding: 1em;
         font-weight: 700;
     }
 
@@ -63,31 +65,30 @@ header{
 #nosotras{
     display: flex ;
     justify-content: space-around;
-    height: 496px;
+    height: 31em;
     align-items: center;
     text-align: center;
-    margin-top: -24px;
-    margin: -24px 0 -400px 0; /* -464px es para que haya una distancia estética entre nosotras y el footer */
+    margin-top: -1.5em;
+    margin: -1.5rem 0 -25em 0; /* -400px es para que haya una distancia estética entre nosotras y el footer */
 } 
 
    #nosotras div img{
-        width: 288px
+        width: 18em
     }
 
     #nosotras div h2{
         font-family: 'Halfmoon', serif;
         font-weight: 700;
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 1.875em;
+        margin-top: 1.25rem;
     } 
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 288px;
-    height: 288px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    width: 18em;
+    height: 18em;
+    perspective: 62.5em; /* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
@@ -114,15 +115,9 @@ header{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
-  /* .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-   */
   /* Style the back side */
   #flip-card-back-belen {
-    background-image: url(/css/imgs/karifondo.png); 
+    background-image: url(/css/imgs/belenfondo.png); 
     background-size: cover;
     color: #f2f2f2;
     transform: rotateY(180deg);
@@ -150,21 +145,21 @@ header{
   }
 
   .redescartas{
-    width: 288px;
-    height: 196px;
-    margin-top: 46px;
+    width: 18em;
+    height: 12.25em;
+    margin-top: 2.875em;
     display: grid;
     justify-content: center;
     align-items: center;
   }
 
   #nosotras .flip-card #flip-card-back-belen a img, #flip-card-back-karina a img, #flip-card-back-bianca a img, #flip-card-back-florencia a img{
-    width: 72px;
+    width: 4.5em;
     transition: 0.3s;
   }
 
   #nosotras .flip-card #flip-card-back-belen a img:hover, #flip-card-back-karina a img:hover, #flip-card-back-bianca a img:hover, #flip-card-back-florencia a img:hover{
-    width: 88px;
+    width: 5.5em;
     transition: 0.3s;
   }
 
@@ -183,7 +178,7 @@ header{
         position: absolute;
         bottom: 0;
         /* height: 120px; altura original */
-        height: 200px;
+        height: 12.5em;
         width: 100%;
         background: url('/css/imgs/pinkwave.png') repeat-x;
         background-size: 250rem 30rem;
@@ -214,46 +209,262 @@ header{
 
     /* RESTO DEL FOOTER ########################## */
 footer{
-    height: 360px;
+    height: 22.5em;
     background-color:rgb(180, 93, 93, 0.97); /* un poco de transparencia para que se junte mejor con las olas */
     font-family: 'Urbanist', serif;
     color: #f2f2f2;
 }
 
     #contenidofooter{
-        height: 288px;
+        height: 18em;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        padding: 0 40px;
+        padding: 0 2.5em;
     }
 
     #redes a img{
-        width: 64px;
+        width: 4em;
     }
 
     #historia h2{
         font-weight: 400;
+        font-size: 16px;
     }
 
     #historia p{
         text-align: justify;
-        width: 560px;
-        padding-top: 8px;
+        width: 35em;
+        padding-top: 0.5em;
+        font-size: 16px;
     }
 
     #nosotrasfooter div{
         text-align: end;
-        font-size: 20px;
-        margin-top: 8px;
+        font-size: 1.25em;
+        margin-top: 0.5em;
     }
 
     #nosotrasfooter div span{
-      padding-right: 8px;
+      padding-right: 0.5em;
     }
 
     #nosotrasfooter div a img{
-        width: 32px;
+        width: 2em;
         vertical-align: middle;
     } 
 
+
+
+    /* REPONSIVE ###################################################*/
+
+    @media (max-width: 1199.98px){
+    /* CARDS */
+    #nosotras{
+      display: flex ;
+      justify-content: space-around;
+      height: 35em;
+      align-items: center;
+      text-align: center;
+      margin-top: -1.5em;
+      margin: -1.5rem 0 -20em 0; 
+  } 
+  
+     #nosotras div img{
+          width: 14rem
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 14rem;
+        height: 14rem;
+        perspective: 62.5em; /* Remove this if you don't want the 3D effect */
+      }
+  
+      #nosotras div h2{
+          font-family: 'Halfmoon', serif;
+          font-weight: 700;
+          font-size: 1.5em;
+          margin-top: 1.5rem;
+      } 
+
+    /* FOOTER */
+    #contenidofooter{
+      height: fit-content;
+      padding-top: 80px;
+    }
+
+    #redes a img{
+      width: 3em;
+  }
+
+  #historia h3{
+    font-size: 13px;
+  }
+
+  #historia p{
+      width: 33em;
+      padding-top: 0.5em;
+      font-size: 16px;
+  }
+
+  #nosotrasfooter div{
+      font-size: 1.3em;
+      margin-top: 0.5em;
+  }
+
+  #nosotrasfooter div a img{
+      width: 1.3em;
+  } 
+    }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+#nosotras{
+  height: 400px;
+}
+
+#nosotras div h2{
+  font-size: 1.2em;
+}
+
+#nosotras div img{
+  width: 11rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 11rem;
+  height: 11rem;
+  perspective: 62.5em; /* Remove this if you don't want the 3D effect */
+}
+
+/* FOOTER */
+footer{
+  height: 24em;
+}
+
+#contenidofooter{
+  height: fit-content;
+  padding-top: 50px;
+}
+
+#historia p{
+  text-align: justify;
+  width: 24em;
+  padding-top: 0.5em;
+  font-size: 14px;
+} 
+
+#nosotrasfooter div{
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+} 
+
+  /* // Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    #nosotras{
+      height: 300px;
+    }
+
+    #nosotras div h2{
+      font-size: 1em;
+    }
+
+    #nosotras div img{
+      width: 8em;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 8rem;
+      height: 8rem;
+      perspective: 62.5em; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* FOOTER */
+    footer{
+      height: 24em;
+    }
+    
+    #contenidofooter{
+      height: fit-content;
+      padding-top: 50px;
+    }
+    
+    #historia p{
+      text-align: justify;
+      width: 20em;
+      padding-top: 0.5em;
+      font-size: 12px;
+    } 
+    
+    #nosotrasfooter div{
+      font-size: 0.8em;
+      margin-top: 0.5em;
+    }
+
+    #redes a img{
+      width: 30px;
+    }
+    
+  
+  }
+
+  /* // X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    #nosotras{
+      height: 200px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 5rem;
+      height: 5rem;
+      perspective: 62.5em; /* Remove this if you don't want the 3D effect */
+    }
+
+    #nosotras div img{
+      width: 5em;
+    }
+
+    #nosotras div h2{
+      font-size: 0.8em;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 5rem;
+      height: 5rem;
+      perspective: 62.5em; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* FOOTER */
+
+    footer{
+      height: 432px;
+    }
+
+    #contenidofooter{
+      margin-bottom: 64px;
+    }
+
+    #historia p{
+      width: 16em;
+    }
+
+    #nosotrasfooter div{
+      width: fit-content;
+    }
+
+    #nosotrasfooter div img{
+      display: flex;
+    }
+
+    }
+    
+
+    
